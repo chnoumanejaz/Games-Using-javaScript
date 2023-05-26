@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dice Game | Nouman Ejaz</title>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <main>
+      <section class="player player--0 player--active">
+        <h2 class="name no-wrap" id="name--0">Player 1</h2>
+        <p class="score" id="score--0">43</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--0">0</p>
+        </div>
+      </section>
+      <section class="player player--1">
+        <h2 class="name no-wrap" id="name--1">Player 2</h2>
+        <p class="score" id="score--1">24</p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current--1">0</p>
+        </div>
+      </section>
+
+      <img src="img/dice-5.png" alt="Playing dice" class="dice" />
+      <button class="btn btn--new">🔄 New game</button>
+      <button class="btn btn--roll">🎲 Roll dice</button>
+      <button class="btn btn--hold">
+        📥 Hold
+        <div class="message hidden">Roll dice atleast once!</div>
+      </button>
+    </main>
+
+    <div class="popup">
+      <div class="popup__heading">
+        <div class="diceSide">
+          
+          <span class="dicePic">🎲</span>
+        </div>
+        <div class="headingg">
+          <h2 class="heading">About the Game</h2>
+        </div>
+        <div class="diceSide">
+          <span class="dicePic">🎲</span> 
+        </div>
+      </div>
+      <div class="popup__body">
+        <ul class="popup__list">
+          <li class="popup__list--item">This is a Multiplayer Game.</li>
+          <li class="popup__list--item">
+            You have to roll the dice and then hold the scores.
+          </li>
+          <li class="popup__list--item">
+            You must have to hold scores if you don't then you have 0 always.
+          </li>
+          <li class="popup__list--item">
+            If there is 1 on the dice then the game switch to other player.
+          </li>
+          <li class="popup__list--item">
+            If you got 1 on the dice roll you lost your current scores.
+          </li>
+          <li class="popup__list--item">
+            The game continues until there is any number on dice other than 1.
+          </li>
+          <li class="popup__list--item">
+            Once you hold the score the game switch to the other Player.
+          </li>
+          <li class="popup__list--item">
+            The 1 who completes his 100 scores first will win the game.
+          </li>
+        </ul>
+      </div>
+      <div class="popup__btn">
+        <button class="btn btn--play">▶ play Game</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
